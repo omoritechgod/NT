@@ -9,7 +9,7 @@ const Details = () => {
           {/* front page*/}
           <div className="front_page">
             <span></span>
-            <h3>Team spirit</h3>
+            <h3 className="text-[30px] font-bold">Team spirit</h3>
             <p>
               At Nexa Trux, our strength lies in our shared passion for
               innovation, relentless collaboration, and unwavering commitment to
@@ -22,25 +22,53 @@ const Details = () => {
             <span></span>
             <h3></h3>
             <p>
-             Beyond technology, we champion a culture of empowerment and purpose,
-            reflected in our initiatives like NT Bootcamp, where we equip the
-            next generation with future-ready skills. Together, we don't just
-            build—we inspire progress, foster inclusivity, and engineer a
-            sustainable digital future
+              Beyond technology, we champion a culture of empowerment and
+              purpose, reflected in our initiatives like NT Bootcamp, where we
+              equip the next generation with future-ready skills. Together, we
+              don't just build—we inspire progress, foster inclusivity, and
+              engineer a sustainable digital future
             </p>
           </div>
         </div>
       </div>
       <div className="details_row">
-        {/* {detailsText.map(({ icon, title, description }, index) => (
+        {detailsText.map(({ icon, title, description }, index) => (
           <div key={index} className="details_card">
             <span>{icon}</span>
             <h3>{title}</h3>
             <p>{description}</p>
           </div>
-        ))}*/}
+        ))}
       </div>
     </section>
   );
 };
+
+const detailsText = [
+  {
+    icon: "",
+    title: "Collaborative Excellence",
+    description:
+      " Seamless teamwork across disciplines to solve complex challenges.",
+  },
+  {
+    icon: "",
+    title: "Customer-Centric Drive",
+    description:
+      " Success measured by the real-world impact we create for clients.",
+  },
+  {
+    icon: "",
+    title: "Purpose-Led Innovation",
+    description:
+      "Technology with a mission, aligned with global sustainability goals.",
+  },
+  {
+    icon: "",
+    title: "Empowerment Culture",
+    description:
+      "Investing in growth, both within our team and in the communities we serve.",
+  },
+];
+
 export default Details;
