@@ -95,7 +95,6 @@ const Team = () => {
           </p>
         </div>
         <div className="flex justify-center items-center my-[80px]">
-          <div className="grid grid-cols-3 gap-x-10 gap-y-14">
             {teamWorkersArray.map((item: object, index: number) => (
               <Card key={index} item={item} />
             ))}
