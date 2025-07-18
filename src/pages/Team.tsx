@@ -95,6 +95,7 @@ const Team = () => {
           </p>
         </div>
         <div className="flex justify-center items-center my-[80px]">
+          <div className="grid gap-x-10 gap-y-14" style={{gridTemplateColumns: "repeat(3, 1fr)"}}>
             {teamWorkersArray.map((item: object, index: number) => (
               <Card key={index} item={item} />
             ))}
