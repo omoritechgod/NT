@@ -33,7 +33,7 @@ const teamWorkersArray = [
   {
     name: "Jaey",
     position: "senior backend developer",
-    image: joel,
+    image: emman,
     desc: "",
     socials: "https://www.linkedin.com/in/",
   },
@@ -46,7 +46,7 @@ const teamWorkersArray = [
   },
   {
     name: "Joel Dartey",
-    position: "senior frontend developer",
+    position: "Advancing developer",
     image: joel,
     desc: "",
     socials: "https://www.linkedin.com/in/",
@@ -54,14 +54,14 @@ const teamWorkersArray = [
   {
     name: "Grace otitoju",
     position: "Graphics designer ",
-    image: joel,
+    image: emman,
     desc: "",
     socials: "https://www.linkedin.com/in/",
   },
   {
     name: "Beboye Emmanuel",
     position: "Technical Writer",
-    image: joel,
+    image: emman,
     desc: "",
     socials: "https://www.linkedin.com/in/",
   },
@@ -72,7 +72,7 @@ const Team = () => {
     <div className="min-h-screen ">
       <Navigation />
 
-      <section className="pt-20 pb-12 text-white bg-gradient-to-b from-[#1b263a] to-[#0c267b]">
+      <section className="pt-[150px] pb-12 text-white bg-gradient-to-b from-[#1b263a] to-[#0c267b]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Our Team</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -82,11 +82,13 @@ const Team = () => {
       </section>
 
       {/* flipping card */}
-      <Details />
+      <div className="w-full flex items-center justify-center">
+        <Details />
+      </div>
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-[#1b263a] mb-1">
+          <h2 className="text-4xl font-bold text-[#0c267b] mb-1">
             Meet Our Innovators
           </h2>
           <p className="text-xl text-gray-600 max-w-[750px] w-[90%] mx-auto">
@@ -94,8 +96,14 @@ const Team = () => {
             solutions every day. Shaping the future with passion and expertise{" "}
           </p>
         </div>
-        <div className="flex justify-center items-center my-[80px]">
-          <div className="grid gap-x-10 gap-y-14" style={{gridTemplateColumns: "repeat(3, 1fr)"}}>
+        <div className="flex justify-center items-center my-[130px]">
+          <div
+            className="grid gap-x-16 gap-y-24"
+            style={{
+              width: "80%",
+              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+            }}
+          >
             {teamWorkersArray.map((item: object, index: number) => (
               <Card key={index} item={item} />
             ))}

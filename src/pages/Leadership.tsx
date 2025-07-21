@@ -1,17 +1,20 @@
-
 import { LinkedinIcon, TwitterIcon, MailIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import trustGod from "@/assets/Administrators-leadership/expert-TG-1.png";
+import emmanuel from "@/assets/Administrators-leadership/expert-s-Emma-om-.png";
+import edidiong from "@/assets/Administrators-leadership/expert-s-Emma-om-.png";
+
 
 const Leadership = () => {
   const leaders = [
     {
-      name: 'Alexander Thompson',
-      role: 'CEO & Founder',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      bio: 'Alex founded NT with a vision to democratize access to cutting-edge technology solutions. With over 15 years of experience in enterprise software and AI, he has led the company from a startup to a global technology partner.',
+      name: 'TrustGod',
+      role: 'CEO & Co-founder',
+      image: trustGod,
+      bio: 'TrustGod founded NT with a vision to democratize access to cutting-edge technology solutions. With over 15 years of experience in enterprise software and AI, he has led the company from a startup to a global technology partner.',
       quote: 'Innovation is not just about technology—it\'s about transforming how businesses connect with their customers and create value in an increasingly digital world.',
       achievements: [
         'Led 300% company growth over 5 years',
@@ -27,10 +30,10 @@ const Leadership = () => {
       }
     },
     {
-      name: 'Sarah Chen',
-      role: 'Chief Technology Officer',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612ed6d?w=400&h=400&fit=crop&crop=face',
-      bio: 'Sarah leads NT\'s technical vision and innovation strategy. Her expertise in cloud architecture, AI/ML, and scalable systems has been instrumental in delivering world-class solutions to Fortune 500 clients.',
+      name: 'Edidiong Umoh',
+      role: 'Co-founder',
+      image: edidiong,
+      bio: 'edidiong leads NT\'s technical vision and innovation strategy. Her expertise in cloud architecture, AI/ML, and scalable systems has been instrumental in delivering world-class solutions to Fortune 500 clients.',
       quote: 'The best technology is invisible—it seamlessly enhances human capability without getting in the way.',
       achievements: [
         'Architected systems serving 100M+ users',
@@ -38,17 +41,17 @@ const Leadership = () => {
         'Patent holder for 3 AI-related innovations',
         'Former Principal Engineer at Google'
       ],
-      education: 'Carnegie Mellon - Computer Engineering, PhD',
+      education: "Mechanical Enginering - UNIPORT, BSC's",
       social: {
-        linkedin: '#',
+        linkedin: 'https://ng.linkedin.com/in/edidiong-umoh',
         twitter: '#', 
         email: 'sarah@nt.com'
       }
     },
     {
-      name: 'Marcus Rodriguez',
-      role: 'Chief Design Officer',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+      name: 'Emmanuel Omanoye',
+      role: 'Co-founder',
+      image: edidiong,
       bio: 'Marcus brings a unique blend of creative vision and strategic thinking to NT\'s design philosophy. His work has been recognized internationally and has helped brands achieve breakthrough digital experiences.',
       quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
       achievements: [
@@ -64,25 +67,25 @@ const Leadership = () => {
         email: 'marcus@nt.com'
       }
     },
-    {
-      name: 'Dr. Amara Okafor',
-      role: 'Chief Strategy Officer',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop&crop=face',
-      bio: 'Amara drives NT\'s global expansion and strategic partnerships. Her deep understanding of emerging markets and digital transformation has positioned NT as a leader in the African tech ecosystem.',
-      quote: 'Strategy is about making choices—choosing where to compete, how to win, and what capabilities to build for sustainable competitive advantage.',
-      achievements: [
-        'Led expansion into 15+ African markets',
-        'Former McKinsey & Company Partner',
-        'Board member of 3 tech startups',
-        'TEDx speaker on African Innovation'
-      ],
-      education: 'Oxford - PPE, Harvard Business School - MBA',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'amara@nt.com'
-      }
-    }
+    // {
+    //   name: 'Dr. Amara Okafor',
+    //   role: 'Chief Strategy Officer',
+    //   image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop&crop=face',
+    //   bio: 'Amara drives NT\'s global expansion and strategic partnerships. Her deep understanding of emerging markets and digital transformation has positioned NT as a leader in the African tech ecosystem.',
+    //   quote: 'Strategy is about making choices—choosing where to compete, how to win, and what capabilities to build for sustainable competitive advantage.',
+    //   achievements: [
+    //     'Led expansion into 15+ African markets',
+    //     'Former McKinsey & Company Partner',
+    //     'Board member of 3 tech startups',
+    //     'TEDx speaker on African Innovation'
+    //   ],
+    //   education: 'Oxford - PPE, Harvard Business School - MBA',
+    //   social: {
+    //     linkedin: '#',
+    //     twitter: '#',
+    //     email: 'amara@nt.com'
+    //   }
+    // }
   ];
 
   return (
@@ -90,7 +93,7 @@ const Leadership = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-12 text-white">
+      <section className="pt-[150px] pb-12 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Leadership</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

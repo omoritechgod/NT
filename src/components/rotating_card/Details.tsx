@@ -1,5 +1,6 @@
 import React from "react";
 import "./details.css";
+import { Group } from "lucide-react";
 
 const Details = () => {
   return (
@@ -8,7 +9,7 @@ const Details = () => {
         <div className="details_flip_card">
           {/* front page*/}
           <div className="front_page">
-            <span></span>
+            <span><Group size={35} /></span>
             <h3 className="text-[30px] font-bold">Team spirit</h3>
             <p>
               At Nexa Trux, our strength lies in our shared passion for

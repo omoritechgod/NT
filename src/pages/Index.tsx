@@ -228,7 +228,7 @@ const Index = () => {
         <div className="absolute w-full h-full">
           <img src={bg_img} alt="background" width={"100%"} height={"100%"} />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/90 z-10"></div>
 
         {/* Animated Background */}
         <div className="absolute  z-20 inset-0 opacity-20">
@@ -262,7 +262,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-[#1b263a] px-8"
+                  className="border-white text-[#1b263a] hover:bg-white hover:text-[#007aff] px-8"
                 >
                   See Our Work
                 </Button>
