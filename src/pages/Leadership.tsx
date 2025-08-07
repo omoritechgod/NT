@@ -137,11 +137,11 @@ const Leadership = () => {
               <Card key={index} className={`overflow-hidden hover:shadow-2xl transition-shadow ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <CardContent className="p-0">
                   <div className={`lg:flex ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                    <div className="lg:w-1/3">
+                    <div className="lg:w-1/3 bg-[#f2f8ff] flex justify-center items-center">
                       <img
                         src={leader.image}
                         alt={leader.name}
-                        className="w-full h-64 lg:h-full object-cover"
+                        className="w-[100%] object-cover"
                       />
                     </div>
                     <div className="lg:w-2/3 p-8 lg:p-12">
