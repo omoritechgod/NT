@@ -15,14 +15,14 @@ const Leadership = () => {
       role: 'CEO & Co-founder',
       image: trustGod,
       bio: 'TrustGod founded NT with a vision to democratize access to cutting-edge technology solutions. With over 15 years of experience in enterprise software and AI, he has led the company from a startup to a global technology partner.',
-      quote: 'Innovation is not just about technology—it\'s about transforming how businesses connect with their customers and create value in an increasingly digital world.',
-      achievements: [
-        'Led 300% company growth over 5 years',
-        'Featured in TechCrunch Top 40 Under 40',
-        'Published author on AI and Business Transformation',
-        'Keynote speaker at 50+ international conferences'
-      ],
-      education: 'MIT - Computer Science, Stanford - MBA',
+      // quote: 'Innovation is not just about technology—it\'s about transforming how businesses connect with their customers and create value in an increasingly digital world.',
+      // achievements: [
+      //   'Led 300% company growth over 5 years',
+      //   'Featured in TechCrunch Top 40 Under 40',
+      //   'Published author on AI and Business Transformation',
+      //   'Keynote speaker at 50+ international conferences'
+      // ],
+      // education: 'MIT - Computer Science, Stanford - MBA',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -34,14 +34,14 @@ const Leadership = () => {
       role: 'Co-founder',
       image: edidiong,
       bio: 'edidiong leads NT\'s technical vision and innovation strategy. Her expertise in cloud architecture, AI/ML, and scalable systems has been instrumental in delivering world-class solutions to Fortune 500 clients.',
-      quote: 'The best technology is invisible—it seamlessly enhances human capability without getting in the way.',
-      achievements: [
-        'Architected systems serving 100M+ users',
-        'AWS Community Hero and Google Cloud Champion',
-        'Patent holder for 3 AI-related innovations',
-        'Former Principal Engineer at Google'
-      ],
-      education: "Mechanical Enginering - UNIPORT, BSC's",
+      // quote: 'The best technology is invisible—it seamlessly enhances human capability without getting in the way.',
+      // achievements: [
+      //   'Architected systems serving 100M+ users',
+      //   'AWS Community Hero and Google Cloud Champion',
+      //   'Patent holder for 3 AI-related innovations',
+      //   'Former Principal Engineer at Google'
+      // ],
+      // education: "Mechanical Enginering - UNIPORT, BSC's",
       social: {
         linkedin: 'https://ng.linkedin.com/in/edidiong-umoh',
         twitter: '#', 
@@ -53,14 +53,14 @@ const Leadership = () => {
       role: 'Co-founder',
       image: emmanuel,
       bio: 'Emmanuel brings a unique blend of creative vision and strategic thinking to NT\'s design philosophy. His work has been recognized internationally and has helped brands achieve breakthrough digital experiences.',
-      quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
-      achievements: [
-        'Winner of 15+ international design awards',
-        'Featured in Design Museum London',
-        'Led rebrands for 3 Fortune 100 companies',
-        'Former Creative Director at IDEO'
-      ],
-      education: 'Royal College of Art - Design, Parsons - MFA',
+      // quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
+      // achievements: [
+      //   'Winner of 15+ international design awards',
+      //   'Featured in Design Museum London',
+      //   'Led rebrands for 3 Fortune 100 companies',
+      //   'Former Creative Director at IDEO'
+      // ],
+      // education: 'Royal College of Art - Design, Parsons - MFA',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -151,12 +151,12 @@ const Leadership = () => {
                         <p className="text-gray-600 mb-6">{leader.bio}</p>
                       </div>
 
-                      <div className="bg-[#007aff]/5 rounded-lg p-6 mb-6">
+                      {/* <div className="bg-[#007aff]/5 rounded-lg p-6 mb-6">
                         <p className="text-lg text-gray-700 italic">"{leader.quote}"</p>
-                      </div>
+                      </div> */}
 
                       <div className="grid md:grid-cols-2 gap-8">
-                        <div>
+                        {/* <div>
                           <h4 className="font-semibold text-[#1b263a] mb-3">Key Achievements</h4>
                           <ul className="space-y-2">
                             {leader.achievements.map((achievement, idx) => (
@@ -166,11 +166,11 @@ const Leadership = () => {
                               </li>
                             ))}
                           </ul>
-                        </div>
+                        </div> */}
                         
                         <div>
-                          <h4 className="font-semibold text-[#1b263a] mb-3">Education</h4>
-                          <p className="text-gray-600 text-sm mb-6">{leader.education}</p>
+                          {/* <h4 className="font-semibold text-[#1b263a] mb-3">Education</h4>
+                          <p className="text-gray-600 text-sm mb-6">{leader.education}</p> */}
                           
                           <h4 className="font-semibold text-[#1b263a] mb-3">Connect</h4>
                           <div className="flex space-x-3">

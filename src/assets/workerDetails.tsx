@@ -1,9 +1,6 @@
-// import {
-
-// } from "";
-
-import { Tg,
-    Edikan,
+import { 
+  Tg,
+  Edikan,
   Ella,
   Emma,
   Emman,
@@ -138,13 +135,6 @@ const adminWorkersArray = [
     position: "Social Media Team lead",
     image: Ella,
     desc: "",
-    socials: "https://www.linkedin.com/in/",
-  },
-  {
-    name: "Edidion umoh",
-    position: "Company roject manager(CPM)/CFO",
-    image: Ella,
-    desc: "Edidion Umoh is a mechanical Engineering graduate with interest in data science and analysis. Enjoys collaborating on projects and managing them.",
     socials: "https://www.linkedin.com/in/",
   },
 ];

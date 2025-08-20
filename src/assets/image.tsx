@@ -10,10 +10,7 @@
 import Edikan from "./Administrators-leadership/expert-s-edikan.png";
 import Tessy from "./Administrators-leadership/expert-s-tessy.png";
 import Tg from "./Administrators-leadership/expert-TG-1.png";
-import Ub from "./Administrators-leadership/expert-s-uB.png";
-import Skill from "./Administrators-leadership/expert-s-God'sskill.png";
-import Ella from "./Administrators-leadership/expert-s-Ella.png";
-import Emma from "./Administrators-leadership/expert-s-Emma-om-.png";
+
 
 // import Breadcrumb from "./breadcrumbs/breadcrumbs-3.png";
 // import Web1 from "./solutions-image/Projects-services/offf.jpg";
