@@ -8,6 +8,7 @@ import obialor from "@/assets/team/expert-s-Obialor.png";
 import victor from "@/assets/team/expert-s-Victor.png";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
+import { Hand } from "lucide-react";
 
 interface TeamWorkersArray {
   name: string;
@@ -54,7 +55,7 @@ const teamWorkersArray: TeamWorkersArray[] = [
     socials: "https://www.linkedin.com/in/",
   },
   {
-    name: "Joel Dartey",
+    name: "Joel Ababio Dartey",
     position: "Advancing developer",
     image: joel,
     desc: "",
@@ -158,7 +159,7 @@ const Team = () => {
               {doubledArray.map((item, index) => (
                 <Card
                   key={index}
-                  className="flex-shrink-0 w-full md:w-1/4 bg-gradient-to-br from-[#355796] to-[#5b75c9]"
+                  className="flex-shrink-0 w-full md:w-1/4 bg-gradient-to-br from-[#0c267b] to-[#5b75c9]"
                 >
                   <CardContent>
                     <img
@@ -171,14 +172,14 @@ const Team = () => {
                       <span className="text-sm text-gray-300">
                         {item.position}
                       </span>
-                      <div className="mt-2">
+                      <div className="mt-2 flex justify-center">
                         <a
                           href={item.socials}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-300 hover:underline"
+                          className="text-blue-300 flex gap-2 items-center hover:underline"
                         >
-                          Connect
+                          Connect <Hand width={16} />
                         </a>
                       </div>
                     </div>
