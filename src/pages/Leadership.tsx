@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import trustGod from "@/assets/Administrators-leadership/expert-TG-1.png";
 import emmanuel from "@/assets/Administrators-leadership/expert-s-Emma-om-.png";
-import edidiong from "@/assets/Administrators-leadership/expert-s-Emma-om-.png";
+import edidiong from "@/assets/Administrators-leadership/edit pic_113022.png";
 
 
 const Leadership = () => {
@@ -51,8 +51,8 @@ const Leadership = () => {
     {
       name: 'Emmanuel Omanoye',
       role: 'Co-founder',
-      image: edidiong,
-      bio: 'Marcus brings a unique blend of creative vision and strategic thinking to NT\'s design philosophy. His work has been recognized internationally and has helped brands achieve breakthrough digital experiences.',
+      image: emmanuel,
+      bio: 'Emmanuel brings a unique blend of creative vision and strategic thinking to NT\'s design philosophy. His work has been recognized internationally and has helped brands achieve breakthrough digital experiences.',
       quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
       achievements: [
         'Winner of 15+ international design awards',
@@ -64,7 +64,7 @@ const Leadership = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'marcus@nt.com'
+        email: 'emmanuel@nt.com'
       }
     },
     // {
