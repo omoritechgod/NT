@@ -1,0 +1,119 @@
+.details_container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin: 80px auto;
+  gap: 50px;
+  /* background: green; */
+}
+
+.details_row {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  column-gap: 30px;
+  row-gap: 20px;
+  /* background: red; */
+}
+.details_flip_content {
+  flex-basis: 35%;
+  perspective: 1000px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.details_flip_card {
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: transform 800ms ease-in-out;
+  transition: transform 800ms ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 10px;
+  background: #0c267b;
+}
+
+.front_page {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  inset: 0 0 0 0;
+  background: url(../../assets/breadcrumb/breadcrumbs.png);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+}
+.back_page {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  inset: 0 0 0 0;
+  background: url(../../assets/breadcrumb/breadcrumbs.png);
+  backface-visibility: hidden;
+  gap: 10px;
+  color: #fff;
+}
+.front_page p,
+.back_page p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.details_flip_card:hover {
+  transform: rotateY(-180deg);
+}
+.details_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0rem 1.25rem 1.6875rem 0rem rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+}
+.details_card span {
+  color: #fff;
+}
+.details_card p {
+  color: #0c267b;
+  line-height: 30px;
+  font-size: 15px;
+}
+.details_card h3 {
+  color: #0c267b;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 1000px) {
+  .details_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .details_row {
+    flex-basis: 100%;
+    /* background: green; */
+  }
+  .details_flip_content {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
