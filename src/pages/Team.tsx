@@ -10,6 +10,8 @@ import Skill from "@/assets/Administrators-leadership/expert-s-God'sskill.png";
 import Edikan from "@/assets/Administrators-leadership/expert-s-edikan.png";
 import Tessy from "@/assets/Administrators-leadership/expert-s-tessy.png";
 import victor from "@/assets/team/expert-s-Victor.png";
+import grace from "@/assets/team/ggrace_073154.png";
+
 import ella from "@/assets/Administrators-leadership/expert-s-Ella.png";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
@@ -55,7 +57,7 @@ const teamWorkersArray: TeamWorkersArray[] = [
 
   {
     name: "kenile",
-    position: "ceo",
+    position: "UI/UX Designer",
     image: kenile,
     desc: "",
     socials: "https://www.linkedin.com/in/",
@@ -95,13 +97,13 @@ const teamWorkersArray: TeamWorkersArray[] = [
     desc: "",
     socials: "https://www.linkedin.com/in/",
   },
-  // {
-  //   name: "Grace otitoju",
-  //   position: "Graphics designer ",
-  //   image: emman,
-  //   desc: "",
-  //   socials: "https://www.linkedin.com/in/",
-  // },
+  {
+    name: "Grace otitoju",
+    position: "Graphics designer ",
+    image: grace,
+    desc: "",
+    socials: "https://www.linkedin.com/in/",
+  },
   // {
   //   name: "Beboye Emmanuel",
   //   position: "Technical Writer",

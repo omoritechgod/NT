@@ -163,30 +163,30 @@ const Index = () => {
     },
   ];
 
-  const teamMembers = [
-    {
-      name: "Alex Thompson",
-      role: "CEO & Founder",
-      quote:
-        "Innovation is not just about technology—it's about transforming how businesses connect with their customers.",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-    },
-    {
-      name: "Sarah Kim",
-      role: "Head of Design",
-      quote: "Great design is invisible—it just works.",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612ed6d?w=300&h=300&fit=crop&crop=face",
-    },
-    {
-      name: "Marcus Johnson",
-      role: "Lead Developer",
-      quote: "Code is poetry written in logic.",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Alex Thompson",
+  //     role: "CEO & Founder",
+  //     quote:
+  //       "Innovation is not just about technology—it's about transforming how businesses connect with their customers.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+  //   },
+  //   {
+  //     name: "Sarah Kim",
+  //     role: "Head of Design",
+  //     quote: "Great design is invisible—it just works.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1494790108755-2616b612ed6d?w=300&h=300&fit=crop&crop=face",
+  //   },
+  //   {
+  //     name: "Marcus Johnson",
+  //     role: "Lead Developer",
+  //     quote: "Code is poetry written in logic.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+  //   },
+  // ];
 
   const filters = ["All", "Web", "Mobile", "Design", "AI", "Branding"];
   const filteredProjects =
@@ -493,7 +493,7 @@ const Index = () => {
       </section>
 
       {/* Meet the Team Preview */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1b263a] mb-4">
@@ -537,7 +537,7 @@ const Index = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Blog/Insights Preview */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -628,7 +628,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#0c267b] px-8"
+                className="border-[#0c267b] text-white bg-[#0c267b] hover:bg-white hover:text-[#0c267b] px-8"
               >
                 Talk to Us
               </Button>
