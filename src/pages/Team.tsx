@@ -154,7 +154,7 @@ const Team = () => {
         setSliderIndex(0); // reset instantly
       }, 500); // match transition duration
     }
-    console.log(sliderIndex >= doubledArray.length / itemsPerSlide);
+    // console.log(sliderIndex >= doubledArray.length / itemsPerSlide);
   }, [sliderIndex, itemsPerSlide, doubledArray.length]);
 
   return (
@@ -187,7 +187,7 @@ const Team = () => {
         </div>
         <div className="w-full overflow-hidden mt-8 py-10 overflow-x-scroll scrollbar-hide">
           <div
-            className={`flex gap-6  ${
+            className={`flex ${window.innerWidth < 768 ? "gap-2" : "gap-6"} ${
               isTransitioning
                 ? "transition-transform duration-500 ease-in-out"
                 : ""

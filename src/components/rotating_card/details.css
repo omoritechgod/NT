@@ -26,7 +26,7 @@
 
 .details_flip_card {
   width: 100%;
-  min-height: 350px;
+  min-height: 450px;
   height: 100%;
   cursor: pointer;
   -webkit-transition: transform 800ms ease-in-out;
@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  padding: 30px;
+  padding: 0 30px;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -116,4 +116,11 @@
     flex-basis: 100%;
     width: 100%;
   }
+}
+
+@media (max-width: 500px) {
+.details_flip_card {
+  min-height: 450px;
+}
+
 }
