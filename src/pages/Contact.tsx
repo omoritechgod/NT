@@ -211,8 +211,8 @@ const Contact = () => {
                       <h3 className="font-semibold text-[#1b263a] mb-1">
                         Email Us
                       </h3>
-                      <p className="text-gray-600">hello@nt.com</p>
-                      <p className="text-gray-600">partnerships@nt.com</p>
+                      <p className="text-gray-600">info@nexatrux.com</p>
+                      <p className="text-gray-600">info@nexatrux.com</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -224,8 +224,8 @@ const Contact = () => {
                       <h3 className="font-semibold text-[#1b263a] mb-1">
                         Call Us
                       </h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-gray-600">+44 20 7123 4567</p>
+                      <p className="text-gray-600">+2348105182900</p>
+                      <p className="text-gray-600">+2347031337482</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -255,7 +255,7 @@ const Contact = () => {
                         Response Time
                       </h3>
                       <p className="text-gray-600">
-                        We respond within 24 hours
+                        We respond within 48 hours
                       </p>
                       <p className="text-gray-600">
                         Emergency support available
