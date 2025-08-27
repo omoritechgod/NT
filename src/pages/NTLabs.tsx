@@ -121,10 +121,10 @@ const NTLabs = () => {
               </div>
             </div>
           </div>
-
+{/* 
           <p className="text-gray-500 italic">
             * These are conceptual mockups. Actual products may vary.
-          </p>
+          </p> */}
         </div>
       </section>
 

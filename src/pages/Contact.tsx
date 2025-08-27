@@ -212,7 +212,7 @@ const Contact = () => {
                         Email Us
                       </h3>
                       <p className="text-gray-600">info@nexatrux.com</p>
-                      <p className="text-gray-600">info@nexatrux.com</p>
+                      <p className="text-gray-600">nexatrux@gmail.com</p>
                     </div>
                   </CardContent>
                 </Card>
