@@ -26,8 +26,8 @@ const Solutions = () => {
         "Healthcare Brand Transformation"
       ],
       testimonial: {
-        text: "NT transformed our brand identity completely. The new design system increased our brand recognition by 200%.",
-        author: "Jennifer Walsh, CMO at TechFlow"
+        text: "NexaTrux did an excellent job shaping our brand identity. They captured our vision perfectly and delivered a design that truly represents who we are. We’re proud of the outcome!",
+        author: "Peace Kings, Weckeep"
       }
     },
     {
@@ -49,7 +49,7 @@ const Solutions = () => {
       ],
       testimonial: {
         text: "The UI/UX redesign NT delivered increased our user engagement by 150% and reduced support tickets by 40%.",
-        author: "David Park, Product Manager at HealthTech"
+        author: "Prof. Bourdillon Omijeh"
       }
     },
     {
@@ -70,8 +70,8 @@ const Solutions = () => {
         "Financial Services Dashboard"
       ],
       testimonial: {
-        text: "NT built us a scalable platform that handles millions of transactions daily. Their code quality is exceptional.",
-        author: "Alex Chen, CTO at FinanceFlow"
+        text: "NexaTrux knows their work. They delivered built my website. Their ability to listen is topnotch. I would recommend NexaTrux anyway, anytime..",
+        author: "Dike Scholar, CEO at SRD Consulting LTD"
       }
     },
     {
@@ -92,8 +92,8 @@ const Solutions = () => {
         "Healthcare Patient Portal"
       ],
       testimonial: {
-        text: "Our mobile app built by NT has over 1M downloads and 4.8-star rating. The quality exceeded our expectations.",
-        author: "Maria Rodriguez, Founder of FoodieApp"
+        text: "I had the privilege of entrusting the EU Erasmus to NITDA and NCC project to TRUSTGOD and his team @ NexaTrux. Their professionalism, technical expertise, and innovative approach ensured the successful delivery of a secure and world-class solution that met and exceeded our objectives",
+        author: "Prof. Bourdillon Omijeh, Founder of B.O.F"
       }
     },
     {
@@ -136,8 +136,8 @@ const Solutions = () => {
         "Brand Awareness Campaign"
       ],
       testimonial: {
-        text: "NT's marketing strategy increased our qualified leads by 250% and reduced our cost per acquisition by 40%.",
-        author: "Lisa Thompson, Marketing Director at GrowthCo"
+        text: "I must say they are skilled at digital marketing, Started working with the CEO even before he went legal and having people that work with him, always on top of his game driving massive sales using creative contents and my Website",
+        author: "Mrs Chiamaka Eronini, CEO at Amiable World Boutique"
       }
     },
     {

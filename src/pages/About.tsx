@@ -47,7 +47,7 @@ const About = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Our Story</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Born from a passion for innovation and a commitment to excellence, 
-            NT has grown from a bold idea to a global technology partner.
+            Nexa Trux has grown from a bold idea to a global technology partner,Empowering the Future, One Digital Solution at a Time.
           </p>
         </div>
       </section>
@@ -59,19 +59,18 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold text-[#1b263a] mb-6">Who We Are</h2>
               <p className="text-lg text-gray-600 mb-6">
-                NT is a premium technology company that specializes in delivering cutting-edge 
-                solutions to businesses worldwide. Founded in 2019, we have grown from a small 
-                team of passionate technologists to a global organization serving clients across industries.
+               At Nexa Trux Digital Technologies (NT), we’re not just building products — we’re engineering the future. Our mission is simple but bold: to revolutionize how businesses operate and how individuals thrive using the power of technology. We are a multi-dimensional tech powerhouse driving innovation across various sectors with a unified goal — digital transformation for sustainable impact.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our expertise spans custom software development, AI integration, UI/UX design, 
-                branding, digital marketing, and network infrastructure. We don't just build 
-                technology—we craft experiences that transform how businesses operate and grow.
+                    Our structure is designed to serve holistically, with specialized arms focusing on key areas of today’s digital economy. From custom software development (web apps, mobile apps, AI model development, cloud computing, and cybersecurity) to digital design and branding, UI/UX, 3D modeling, embedded systems, robotics, and even network infrastructure for homes and offices — we’re building solutions that connect ideas to execution seamlessly.
+    But that’s not all.
               </p>
               <p className="text-lg text-gray-600">
-                What sets us apart is our unwavering commitment to excellence, our innovative 
-                approach to problem-solving, and our ability to deliver world-class solutions 
-                regardless of geographical boundaries.
+                  We're also laying the foundation for the next generation through our Digital Academy, aligning with the United Nations Sustainable Development Goals (SDGs). Through initiatives like the NT Bootcamp, we offer free and accessible tech training for youths, students, and aspiring professionals — empowering them with the skills they need to live sustainably and compete globally.
+                  We’re not just a company.
+                  We’re a movement.
+                  A vision.
+                  A next-generation catalyst for digital change.
               </p>
             </div>
             <div className="relative">
@@ -133,7 +132,7 @@ const About = () => {
       </section>
 
       {/* Milestones */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1b263a] mb-4">Our Journey</h2>
@@ -166,7 +165,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Values */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
