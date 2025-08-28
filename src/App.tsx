@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,7 @@ import NTLearn from "./pages/NTLearn";
 import InsightHub from "./pages/InsightHub";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -24,20 +24,22 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/leadership" element={<Leadership />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/solutions" element={<Solutions />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/nt-labs" element={<NTLabs />} />
-          <Route path="/nt-learn" element={<NTLearn />} />
-          <Route path="/insight-hub" element={<InsightHub />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/leadership" element={<Leadership />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/nt-labs" element={<NTLabs />} />
+            <Route path="/nt-learn" element={<NTLearn />} />
+            <Route path="/insight-hub" element={<InsightHub />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -2,12 +2,18 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import offray from "@/assets/projects/offray.png";
+import offray_1 from "@/assets/projects/offray.png";
+import offray_2 from "@/assets/projects/offray2.png";
+import offray_3 from "@/assets/projects/offray3.png";
+import offray_4 from "@/assets/projects/offray4.png";
+import offray_5 from "@/assets/projects/offray5.png";
 import bourd from "@/assets/projects/bourdillonomijehfoundation.png";
 import bourd_2 from "@/assets/projects/bourdillonomijehfoundation2.png";
 import bourd_3 from "@/assets/projects/bourdillonomijehfoundation3.png";
 import fam from "@/assets/projects/famousitsolutionltd.png";
 import fam_2 from "@/assets/projects/famousitsolutionltd3.png";
 import fam_3 from "@/assets/projects/famousitsolutionltd2.png";
+import fam_4 from "@/assets/projects/famousitsolutionltd4.png";
 import mc from "@/assets/projects/mc-dee.png";
 import mc_3 from "@/assets/projects/mc-dee2.png";
 import fran from "@/assets/projects/franclick.png";
@@ -26,6 +32,7 @@ import brand_one from "@/assets/projects/brand-one.png";
 import brand_two from "@/assets/projects/brand-two.png";
 import bus_card from "@/assets/projects/BusCard.jpg";
 import custom_hoddie from "@/assets/projects/custom-hoodie.jpg";
+import bourd_4 from "@/assets/projects/bourdillonomijehfoundation4.png";
 import mock from "@/assets/projects/moccck-1.png";
 
 import { useEffect, useState } from "react";
@@ -55,7 +62,7 @@ const project: Project[] = [
   {
     id: 2,
     title: "bourdillonomijeh Foundation",
-    image: [bourd, bourd_2, bourd_3],
+    image: [bourd, bourd_2, bourd_3,bourd_4],
     category: "Web",
     description:
       "The Bourdillon Omijeh Foundation (BOF), is a non-profit initiative born from a deep desire to raise Africa's next generation of technology innovators",
@@ -77,13 +84,13 @@ const project: Project[] = [
     image: [mag, elect, mag],
     category: "Web",
     description:
-      "The Bourdillon Omijeh Foundation (BOF), is a non-profit initiative born from a deep desire to raise Africa's next generation of technology innovators",
+      "A digital platform where customers gets to interact with the services rendered by the company",
     tech: ["React", "Node.js", "PHP"],
   },
   {
     id: 5,
     title: "FAMOS IT Solutions",
-    image: [fam, fam_2, fam_3],
+    image: [fam, fam_2, fam_3,fam_4 ],
     category: "Web",
     description:
       "FAMOS IT Solutions Limited is a progressive and innovation-driven technology and logistics company",
@@ -95,7 +102,7 @@ const project: Project[] = [
     image: [curate, curate, curate],
     category: "Web",
     description:
-      "The Bourdillon Omijeh Foundation (BOF), is a non-profit initiative born from a deep desire to raise Africa's next generation of technology innovators",
+      "A digital plqatform for your on stop hospitality and comfort on a budget",
     tech: ["React", "Node.js", "PHP"],
   },
   {
@@ -111,7 +118,7 @@ const project: Project[] = [
   {
     id: 8,
     title: "offray uk",
-    image: [offray, offray, bourd_3],
+    image: [offray, offray_2, offray_1,offray_3,offray_4,offray_5],
     category: "Web",
     description:
       "A Uk based Airport based airport pickup, service apartment, home appliance and nigerian foodb dropshipping platform",
@@ -120,19 +127,19 @@ const project: Project[] = [
   {
     id: 9,
     title: "FinTech Mobile App",
-    image: [buzz, buzz, fam_2],
+    image: [buzz, buzz],
     category: "Mobile",
     description:
-      "Secure financial management app with biometric authentication",
+      "Buzz food and delivery app",
     tech: ["React Native", "Blockchain", "Security"],
   },
   {
     id: 10,
     title: "FinTech Mobile App",
-    image: [buzz, buzz, fam_2],
+    image: [buzz, buzz],
     category: "Mobile",
     description:
-      "Secure financial management app with biometric authentication",
+      "Buzz food and delivery app",
     tech: ["React Native", "Blockchain", "Security"],
   },
   {
@@ -141,7 +148,7 @@ const project: Project[] = [
     image: [ai, ai, ai],
     category: "AI",
     description:
-      "Intelligent customer service automation with natural language processing",
+      "An ai machine model for emotion music recommender, uses your emotion and suggest songs that compliment it..",
     tech: ["Python", "OpenAI", "Machine Learning"],
   },
   {
@@ -218,9 +225,9 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      <section className="max-w-[1500px] w-[95%] py-0 backdrop-blur rounded-xl mb-20 -mt-[95px] mx-auto">
+      <section className="max-w-[1200px] w-[98%] py-0 backdrop-blur rounded-xl mb-20 -mt-[95px] mx-auto">
         <div className="w-full flex justify-center items-center">
-          <div className="max-w-[1000px] mx-auto">
+          <div className="max-w-full">
             <div className="mb-8">
               <div className="flex gap-4 mb-4">
                 {filters.map((value, index) => (
@@ -244,7 +251,7 @@ const CaseStudies = () => {
                     onMouseLeave={() => setIsHovered(null)}
                   >
                     <CardContent className="w-full p-0 m-0">
-                      <div className={`relative aspect-[4/3] overflow-hidden`}>
+                      <div className={`relative aspect-[16/9] overflow-hidden`}>
                         <img
                           src={item.image[count[item.id]]}
                           alt={item.title}

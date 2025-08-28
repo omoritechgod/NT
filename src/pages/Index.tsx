@@ -98,31 +98,49 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "TechCorp Global",
-      role: "CTO",
+      name: "Dike Scholar",
+      company: "SRD Consulting LTD",
+      role: "CEO",
       content:
-        "NT delivered exceptional results on our AI integration project. Their expertise and professionalism exceeded all expectations.",
+        "NexaTrux knows their work. They delivered my brand's logo and built my website. Their ability to listen is topnotch. I would recommend NexaTrux anyway, anytime.",
       rating: 5,
       industry: "Technology",
     },
     {
-      name: "Michael Chen",
-      company: "InnovateNow",
-      role: "CEO",
+      name: "Prof. Bourdilon Omijeh",
+      company: "B.O.F",
+      role: "founder",
       content:
-        "The custom software solution NT built for us transformed our operations. Outstanding quality and support throughout.",
+        "TRUSTGOD is one of my mentees, and when it comes to designs and software development I can tell you, him and his team (Nexa trux) are truely gifted.",
       rating: 5,
-      industry: "Healthcare",
+      industry: "technology",
     },
     {
-      name: "Emily Rodriguez",
-      company: "Digital Dynamics",
-      role: "Head of Product",
+      name: "Mr Macdonald",
+      company: "MC Dee",
+      role: "Director",
       content:
-        "NT's UI/UX design work elevated our product to new heights. Incredible attention to detail and user experience.",
+        "NexaTrux delivered our outstanding multipurpose web application MC DEE . The platform is seamless, modern, and built exactly to our needs — truly top-notch work! i will always recommend them",
       rating: 5,
-      industry: "Finance",
+      industry: "Ecommerce",
+    },
+    {
+      name: "Songo",
+      company: "Famos IT Solutions LTD",
+      role: "IT sales Consultant",
+      content:
+        "Outstanding work! Nexa Trux built a fantastic website that's user-friendly, visually appealing, and functions flawlessly. Their professionalism, attention to detail, and timely delivery exceeded my expectations. Highly recommended",
+      rating: 5,
+      industry: "Ecommerce",
+    },
+    {
+      name: "Mrs Chiamaka Eronini",
+      company: "Amiable World Boutique",
+      role: "CEO",
+      content:
+        "I must say they are skilled at digital marketing, Started working with the CEO even before he went legal and having people that work with him, always on top of his game driving massive sales using creative contents and my Website",
+      rating: 5,
+      industry: "Digital Marketing",
     },
   ];
 
@@ -237,7 +255,7 @@ const Index = () => {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#007aff] rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
 
-        <div className="relative z-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
               {heroSlides[currentHero].title}
@@ -471,7 +489,10 @@ const Index = () => {
                     <span className="px-3 py-1 bg-[#007aff]/20 text-[#007aff] rounded-full text-sm font-medium">
                       {project.category}
                     </span>
-                    <ExternalLink className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <Link to="/case-studies">
+                      {" "}
+                      <ExternalLink className="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </Link>{" "}
                   </div>
                   <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
                   <p className="text-gray-300 mb-6">{project.description}</p>
