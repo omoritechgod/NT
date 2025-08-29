@@ -193,7 +193,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="mailto:nexatrux@gmail.com">nexatrux@gmail.com</a>
+                <a href="mailto:nexatrux@gmail.com">info@nexatrux.com</a>
               </li>
               {/* <li>+1 (555) 123-4567</li> */}
               <li>Global Presence</li>
