@@ -233,7 +233,7 @@ const Index = () => {
         <p className="text-sm">
           🎓 Empowering Africa's Next Digital Leaders with{" "}
           <span className="font-semibold">NT Learn</span>
-          <Link to="/nt-learn" className="ml-2 underline hover:no-underline">
+          <Link to="https://bootcamp.nexatrux.com" className="ml-2 underline hover:no-underline">
             Explore NT Learn
           </Link>
         </p>
