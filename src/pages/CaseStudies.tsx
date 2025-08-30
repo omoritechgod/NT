@@ -215,7 +215,7 @@ const CaseStudies = () => {
     <div className="min-h-screen bg-gradient-to-r from-[#0c267b] to-[#007aff]">
       <Navigation />
       {/* bg-[#0e131f] */}
-      <section className="pt-[150px] pb-12 text-white h-[65vh] ">
+      <section className="py-[150px]  text-white h-auto md:h-[65vh] ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Case Studies</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -225,11 +225,11 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      <section className="max-w-[1200px] w-[98%] py-0 backdrop-blur rounded-xl mb-20 -mt-[95px] mx-auto">
+      <section className="max-w-[1200px] w-[98%] py-0 backdrop-blur rounded-xl mb-20 -mt-32 md:-mt-[95px] mx-auto">
         <div className="w-full flex justify-center items-center">
           <div className="max-w-full">
             <div className="mb-8">
-              <div className="flex gap-4 mb-4">
+              <div className="flex gap-4 mb-4 flex-wrap">
                 {filters.map((value, index) => (
                   <button
                     key={index}

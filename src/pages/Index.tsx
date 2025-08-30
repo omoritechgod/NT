@@ -229,7 +229,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1b263a] to-[#0c267b]">
       {/* NT Learn Banner */}
-      <div className="bg-gradient-to-r from-[#007aff] to-[#0c267b] text-white py-2 px-4 text-center">
+      {/* <div className="bg-gradient-to-r from-[#007aff] to-[#0c267b] text-white py-2 px-4 text-center">
         <p className="text-sm">
           🎓 Empowering Africa's Next Digital Leaders with{" "}
           <span className="font-semibold">NT Learn</span>
@@ -237,14 +237,14 @@ const Index = () => {
             Explore NT Learn
           </Link>
         </p>
-      </div>
+      </div> */}
 
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute w-full h-full">
-          <img src={bg_img} alt="background" width={"100%"} height={"100%"} />
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="w-full h-full">
+          <img src={bg_img} alt="background" className="w-full h-full object-cover"/>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/90 z-10"></div>
 
@@ -255,7 +255,7 @@ const Index = () => {
           <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#007aff] rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
 
-        <div className="relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="absolute left-0 z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
               {heroSlides[currentHero].title}
