@@ -25,14 +25,14 @@ const Navigation = () => {
   return (
     <nav
       className={`max-w-[1200px] rounded-[5px] w-[90%] bg-black/20 backdrop-blur-md border-b border-white/10 left-1/2 -translate-x-1/2 z-50 fixed ${
-        isScrolled ? "top-[0px]" : "top-[36px]"
+        isScrolled ? "top-[0px]" : "top-[20px]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center">
             <img
-              src="/nexalgwhite.png"
+              src="/logo.png"
               alt="Nexa Trux Logo"
               className="h-21 w-20 object-contain"
             />
@@ -177,7 +177,7 @@ const Navigation = () => {
               </Button>
             </Link>
 
-            <div className="flex flex-col gap-1 md:hidden w-11 cursor-pointer active:bg-white/50" onClick={()=> setHamburger(!hamburger)}>
+            <div className="flex flex-col gap-1 md:hidden w-9 cursor-pointer active:bg-white/50" onClick={()=> setHamburger(!hamburger)}>
               <span className="w-full h-1 bg-white/60"></span>
               <span className="w-full h-1 bg-white/60"></span>
               <span className="w-full h-1 bg-white/60"></span>
