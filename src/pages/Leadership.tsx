@@ -11,7 +11,7 @@ const Leadership = () => {
   const leaders = [
     {
       name: "TrustGod",
-      role: " Founder & CEO",
+      role: " Founder & MD",
       image: trustGod,
       bio: "Trust God is the visionary behind NT. As a highly skilled full-stack and all-round developer, he brings unmatched expertise in software engineering, system architecture, and product innovation. With a passion for building scalable, robust solutions, he leads NT with a commitment to excellence, creativity, and impact. Under his leadership, NT is shaping the future of technology with solutions that merge intelligence, design, and innovation.",
       // quote: 'Innovation is not just about technology—it\'s about transforming how businesses connect with their customers and create value in an increasingly digital world.',
@@ -25,14 +25,14 @@ const Leadership = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/",
         twitter: "#",
-        email: "nexatrux@gmail.com",
+        email: "trustewuziem@nexatrux.com",
       },
     },
     {
       name: "Edidiong Umoh",
-      role: "Co-Founder & Data/Design Strategist",
+      role: "Co-Founder & Company project manager(CPM)/CFO",
       image: edidiong,
-      bio: "Edidiong serves as Co-Founder of NT, bringing her expertise in data analysis, data science, and UI/UX design. She plays a central role in transforming data into actionable insights while designing user-focused experiences that align with NT’s mission. Her unique blend of technical and creative skills ensures that NT’s products remain data-driven, user-centric, and impactful.",
+      bio: "Edidiong serves as Co-Founder and Company project manager(CPM)/CFO of NT, bringing her expertise in data analysis, data science, and UI/UX design. She plays a central role in transforming data into actionable insights while designing user-focused experiences that align with NT’s mission. Her unique blend of technical and creative skills ensures that NT’s products remain data-driven, user-centric, and impactful.",
       // quote: 'The best technology is invisible—it seamlessly enhances human capability without getting in the way.',
       // achievements: [
       //   'Architected systems serving 100M+ users',
@@ -49,9 +49,9 @@ const Leadership = () => {
     },
     {
       name: "Emmanuel Omanoye",
-      role: "Co-Founder & AI/ML Engineer",
+      role: "Co-Founder & Deputy Managing Director (DMB)/COO",
       image: emmanuel,
-      bio: "Emmanuel is Co-Founder of NT and the driving force behind its artificial intelligence, AI model development, and machine learning initiatives. With deep technical knowledge and a passion for innovation, he focuses on building intelligent, scalable systems that power NT’s cutting-edge solutions. His work is instrumental in advancing NT’s vision of harnessing AI to transform industries and create smarter technologies.",
+      bio: "Emmanuel is Co-Founder and Deputy Managing Director (DMB)/COO  of NT and the driving force behind its artificial intelligence, AI model development, and machine learning initiatives. With deep technical knowledge and a passion for innovation, he focuses on building intelligent, scalable systems that power NT’s cutting-edge solutions. His work is instrumental in advancing NT’s vision of harnessing AI to transform industries and create smarter technologies.",
       // quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
       // achievements: [
       //   'Winner of 15+ international design awards',
@@ -107,7 +107,7 @@ const Leadership = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1b263a] mb-8">
-              A Message from Our CEO
+              A Message from Our MD
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-r from-[#007aff]/10 to-[#0c267b]/10 rounded-xl p-8 mb-8">
@@ -126,7 +126,7 @@ const Leadership = () => {
                 </p>
               </div>
               <p className="text-right text-[#007aff] font-semibold">
-                - Trust God, CEO & Founder
+                - Trust God, MD & Founder
               </p>
             </div>
           </div>
