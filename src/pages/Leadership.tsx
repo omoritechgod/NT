@@ -168,7 +168,7 @@ const Leadership = () => {
                         <h3 className="text-3xl font-bold text-[#1b263a] mb-2">
                           {leader.name}
                         </h3>
-                        <p className="text-xl text-[#007aff] font-semibold mb-4">
+                        <p className="text-xl text-[#007aff] capitalize font-semibold mb-4">
                           {leader.role}
                         </p>
                         <p className="text-gray-600 mb-6">{leader.bio}</p>
