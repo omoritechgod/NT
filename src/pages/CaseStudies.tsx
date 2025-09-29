@@ -80,7 +80,7 @@ const project: Project[] = [
 
   {
     id: 4,
-    title: "MAGs and SEEE",
+    title: "MAGs and SEEE (Design)",
     image: [mag, elect, mag],
     category: "Web",
     description:
