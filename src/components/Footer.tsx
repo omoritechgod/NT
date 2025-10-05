@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -8,10 +8,10 @@ const Footer = () => {
   const [emailInput, setEmailInput] = useState<string>("");
   const [message, setMessage] = useState<string>(null);
   const [status, setStatus] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
 
     try {
       await axios.post(
@@ -35,6 +35,30 @@ const Footer = () => {
         setStatus(false);
       }, 3000);
       setMessage(error || "Your submit was not sucessfull ");
+    }
+  };
+
+  // Handler for scrolling to testimonials section
+  const handleTestimonialsClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    // Check if we're already on the solutions page
+    if (window.location.pathname === '/solutions') {
+      // If on solutions page, just scroll to the section
+      const testimonialsSection = document.getElementById('testimonials');
+      if (testimonialsSection) {
+        testimonialsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on another page, navigate to solutions page with hash
+      navigate('/solutions#testimonials');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const testimonialsSection = document.getElementById('testimonials');
+        if (testimonialsSection) {
+          testimonialsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   };
 
@@ -131,6 +155,15 @@ const Footer = () => {
                   Network Infrastructure
                 </Link>
               </li>
+              <li>
+                <a
+                  href="/solutions#testimonials"
+                  onClick={handleTestimonialsClick}
+                  className="hover:text-[#007aff] transition-colors cursor-pointer"
+                >
+                  Client Testimonials
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -192,9 +225,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="mailto:nexatrux@gmail.com">info@nexatrux.com</a>
+                <a href="mailto:info@nexatrux.com">info@nexatrux.com</a>
               </li>
-              {/* <li>+1 (555) 123-4567</li> */}
               <li>Global Presence</li>
               <li>
                 <Link
@@ -213,12 +245,12 @@ const Footer = () => {
             &copy; 2024 NT. All rights reserved.
           </p>
           <div className="flex space-x-6 text-gray-400">
-            <a href="#" className="hover:text-[#007aff] transition-colors">
+            <Link to="/privacy-policy" className="hover:text-[#007aff] transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-[#007aff] transition-colors">
+            </Link>
+            <Link to="/terms-of-service" className="hover:text-[#007aff] transition-colors">
               Terms of Service
-            </a>
+            </Link>
             <a href="#" className="hover:text-[#007aff] transition-colors">
               Cookie Policy
             </a>

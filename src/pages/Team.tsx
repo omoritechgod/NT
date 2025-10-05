@@ -11,6 +11,7 @@ import Edikan from "@/assets/Administrators-leadership/expert-s-edikan.png";
 import Tessy from "@/assets/Administrators-leadership/expert-s-tessy.png";
 import victor from "@/assets/team/expert-s-Victor.png";
 import grace from "@/assets/team/ggrace_073154.png";
+import great from "@/assets/team/expert-great.png";
 
 import ella from "@/assets/Administrators-leadership/expert-s-Ella.png";
 import { Card, CardContent } from "@/components/ui/card";
@@ -76,13 +77,13 @@ const teamWorkersArray: TeamWorkersArray[] = [
     desc: "",
     socials: "https://www.linkedin.com/in/",
   },
-  // {
-  //   name: "Jaey",
-  //   position: "senior backend developer",
-  //   image: emman,
-  //   desc: "",
-  //   socials: "https://www.linkedin.com/in/",
-  // },
+  {
+    name: "Great",
+    position: "UI/UX Designer",
+    image: great,
+    desc: "",
+    socials: "https://www.linkedin.com/in/",
+  },
   {
     name: "Victor Eberechi",
     position: "Ai and Embedded system expert",

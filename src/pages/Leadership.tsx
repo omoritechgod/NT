@@ -3,9 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import trustGod from "@/assets/Administrators-leadership/expert-TG-1.png";
-import emmanuel from "@/assets/Administrators-leadership/expert-s-Emma-om-.png";
-import edidiong from "@/assets/Administrators-leadership/edit pic_113022.png";
+import trustGod from "@/assets/Administrators-leadership/team-pics-TG.png";
+import emmanuel from "@/assets/Administrators-leadership/expert-emmanuel.png";
+import edidiong from "@/assets/Administrators-leadership/expert-edi.png";
 
 const Leadership = () => {
   const leaders = [

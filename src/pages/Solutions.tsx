@@ -1,12 +1,15 @@
-
+// ===== FILE: src/pages/Solutions.tsx =====
 import { Link } from 'react-router-dom';
-import { Code, Brain, Palette, Smartphone, TrendingUp, Network, ArrowRight, CheckCircle } from 'lucide-react';
+import { Code, Brain, Palette, Smartphone, TrendingUp, Network, ArrowRight, CheckCircle, Star, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { useState, useEffect } from 'react';
 
 const Solutions = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
   const solutions = [
     {
       icon: Palette,
@@ -24,11 +27,7 @@ const Solutions = () => {
         "Fortune 500 Tech Company Rebrand",
         "Startup Brand Identity Creation",
         "Healthcare Brand Transformation"
-      ],
-      testimonial: {
-        text: "NexaTrux did an excellent job shaping our brand identity. They captured our vision perfectly and delivered a design that truly represents who we are. We’re proud of the outcome!",
-        author: "Peace Kings, Weckeep"
-      }
+      ]
     },
     {
       icon: Smartphone,
@@ -46,11 +45,7 @@ const Solutions = () => {
         "Healthcare Dashboard Redesign",
         "E-commerce Mobile App UI",
         "SaaS Platform User Experience"
-      ],
-      testimonial: {
-        text: "The UI/UX redesign NT delivered increased our user engagement by 150% and reduced support tickets by 40%.",
-        author: "Prof. Bourdillon Omijeh"
-      }
+      ]
     },
     {
       icon: Code,
@@ -68,11 +63,7 @@ const Solutions = () => {
         "Multi-vendor E-commerce Platform",
         "Real-time Collaboration Tool",
         "Financial Services Dashboard"
-      ],
-      testimonial: {
-        text: "NexaTrux knows their work. They delivered built my website. Their ability to listen is topnotch. I would recommend NexaTrux anyway, anytime..",
-        author: "Dike Scholar, CEO at SRD Consulting LTD"
-      }
+      ]
     },
     {
       icon: Smartphone,
@@ -90,11 +81,7 @@ const Solutions = () => {
         "FinTech Banking App",
         "Food Delivery Platform",
         "Healthcare Patient Portal"
-      ],
-      testimonial: {
-        text: "I had the privilege of entrusting the EU Erasmus to NITDA and NCC project to TRUSTGOD and his team @ NexaTrux. Their professionalism, technical expertise, and innovative approach ensured the successful delivery of a secure and world-class solution that met and exceeded our objectives",
-        author: "Prof. Bourdillon Omijeh, Founder of B.O.F"
-      }
+      ]
     },
     {
       icon: Brain,
@@ -112,11 +99,7 @@ const Solutions = () => {
         "Customer Service Chatbot",
         "Predictive Maintenance System",
         "Document Processing Automation"
-      ],
-      testimonial: {
-        text: "NT's AI solution automated 80% of our customer inquiries and improved response time by 300%.",
-        author: "Robert Kim, Operations Director at ServiceCorp"
-      }
+      ]
     },
     {
       icon: TrendingUp,
@@ -134,11 +117,7 @@ const Solutions = () => {
         "B2B SaaS Lead Generation",
         "E-commerce Growth Strategy",
         "Brand Awareness Campaign"
-      ],
-      testimonial: {
-        text: "I must say they are skilled at digital marketing, Started working with the CEO even before he went legal and having people that work with him, always on top of his game driving massive sales using creative contents and my Website",
-        author: "Mrs Chiamaka Eronini, CEO at Amiable World Boutique"
-      }
+      ]
     },
     {
       icon: Network,
@@ -156,13 +135,76 @@ const Solutions = () => {
         "Enterprise Cloud Migration",
         "Multi-site Network Setup",
         "Security Infrastructure Upgrade"
-      ],
-      testimonial: {
-        text: "NT's infrastructure setup reduced our downtime by 99.9% and improved our system performance significantly.",
-        author: "James Wilson, IT Director at TechEnterprise"
-      }
+      ]
     }
   ];
+
+  // Testimonials extracted from solutions
+  const testimonials = [
+    {
+      text: "NexaTrux did an excellent job shaping our brand identity. They captured our vision perfectly and delivered a design that truly represents who we are. We're proud of the outcome!",
+      author: "Peace Kings",
+      company: "Weckeep",
+      role: "Founder",
+      category: "Branding",
+      rating: 5
+    },
+    {
+      text: "The UI/UX redesign NT delivered increased our user engagement by 150% and reduced support tickets by 40%.",
+      author: "Prof. Bourdillon Omijeh",
+      company: "B.O.F",
+      role: "Founder",
+      category: "UI/UX Design",
+      rating: 5
+    },
+    {
+      text: "NexaTrux knows their work. They delivered my brand's logo and built my website. Their ability to listen is topnotch. I would recommend NexaTrux anyway, anytime.",
+      author: "Dike Scholar",
+      company: "SRD Consulting LTD",
+      role: "CEO",
+      category: "Web Development",
+      rating: 5
+    },
+    {
+      text: "I had the privilege of entrusting the EU Erasmus to NITDA and NCC project to TRUSTGOD and his team @ NexaTrux. Their professionalism, technical expertise, and innovative approach ensured the successful delivery of a secure and world-class solution that met and exceeded our objectives.",
+      author: "Prof. Bourdillon Omijeh",
+      company: "B.O.F",
+      role: "Founder",
+      category: "Mobile Development",
+      rating: 5
+    },
+    {
+      text: "NT's AI solution automated 80% of our customer inquiries and improved response time by 300%.",
+      author: "Robert Kim",
+      company: "ServiceCorp",
+      role: "Operations Director",
+      category: "AI Solutions",
+      rating: 5
+    },
+    {
+      text: "I must say they are skilled at digital marketing. Started working with the CEO even before he went legal and having people that work with him, always on top of his game driving massive sales using creative contents and my Website.",
+      author: "Mrs Chiamaka Eronini",
+      company: "Amiable World Boutique",
+      role: "CEO",
+      category: "Digital Marketing",
+      rating: 5
+    },
+    {
+      text: "NT's infrastructure setup reduced our downtime by 99.9% and improved our system performance significantly.",
+      author: "James Wilson",
+      company: "TechEnterprise",
+      role: "IT Director",
+      category: "Network Infrastructure",
+      rating: 5
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1b263a] to-[#0c267b]">
@@ -178,7 +220,7 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* Solutions Grid */}
+      {/* Solutions Grid - Without Testimonials */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
@@ -190,11 +232,6 @@ const Solutions = () => {
                       <solution.icon className="h-16 w-16 text-[#007aff] mb-6" />
                       <h2 className="text-3xl font-bold mb-4">{solution.title}</h2>
                       <p className="text-gray-300 text-lg mb-6">{solution.description}</p>
-                      
-                      <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 mb-6">
-                        <p className="text-gray-200 italic">"{solution.testimonial.text}"</p>
-                        <p className="text-[#007aff] font-semibold mt-2">- {solution.testimonial.author}</p>
-                      </div>
                       
                       <Link to="/contact">
                         <Button className="bg-[#007aff] hover:bg-[#007aff]/80 text-white">
@@ -235,6 +272,99 @@ const Solutions = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* NEW: Dedicated Testimonials Section */}
+      <section id="testimonials" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1b263a] mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real feedback from clients who have experienced the NT difference across our various solutions
+            </p>
+          </div>
+
+          {/* Featured Testimonial Carousel */}
+          <div className="relative max-w-4xl mx-auto mb-16">
+            <Card className="bg-gradient-to-br from-[#1b263a] to-[#0c267b] text-white overflow-hidden">
+              <CardContent className="p-12 relative">
+                <Quote className="absolute top-6 left-6 h-12 w-12 text-[#007aff]/30" />
+                <Quote className="absolute bottom-6 right-6 h-12 w-12 text-[#007aff]/30 rotate-180" />
+                
+                <div className="relative z-10">
+                  <div className="flex justify-center mb-4">
+                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                      <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-xl md:text-2xl mb-8 italic text-center leading-relaxed">
+                    "{testimonials[currentTestimonial].text}"
+                  </p>
+                  
+                  <div className="text-center">
+                    <p className="font-bold text-xl text-white mb-1">
+                      {testimonials[currentTestimonial].author}
+                    </p>
+                    <p className="text-gray-300 mb-1">
+                      {testimonials[currentTestimonial].role}
+                    </p>
+                    <p className="text-[#007aff] font-semibold">
+                      {testimonials[currentTestimonial].company}
+                    </p>
+                    <span className="inline-block mt-3 px-4 py-1 bg-[#007aff]/20 text-[#007aff] rounded-full text-sm">
+                      {testimonials[currentTestimonial].category}
+                    </span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Carousel Indicators */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    currentTestimonial === index ? 'bg-[#007aff] w-8' : 'bg-gray-300'
+                  }`}
+                  onClick={() => setCurrentTestimonial(index)}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* All Testimonials Grid */}
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  
+                  <span className="inline-block mb-3 px-3 py-1 bg-[#007aff]/10 text-[#007aff] rounded-full text-xs font-medium">
+                    {testimonial.category}
+                  </span>
+                  
+                  <p className="text-gray-700 mb-4 italic text-sm leading-relaxed">
+                    "{testimonial.text}"
+                  </p>
+                  
+                  <div className="border-t pt-4">
+                    <p className="font-bold text-[#1b263a]">{testimonial.author}</p>
+                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <p className="text-sm text-[#007aff] font-medium">{testimonial.company}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div> */}
         </div>
       </section>
 

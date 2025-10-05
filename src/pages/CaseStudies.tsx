@@ -126,7 +126,7 @@ const project: Project[] = [
   },
   {
     id: 9,
-    title: "FinTech Mobile App",
+    title: "Food App",
     image: [buzz, buzz],
     category: "Mobile",
     description:
@@ -135,7 +135,7 @@ const project: Project[] = [
   },
   {
     id: 10,
-    title: "FinTech Mobile App",
+    title: "Food App",
     image: [buzz, buzz],
     category: "Mobile",
     description:
@@ -144,7 +144,7 @@ const project: Project[] = [
   },
   {
     id: 11,
-    title: "AI Chatbot Platform",
+    title: "AI Emotion-Based Music Recommender",
     image: [ai, ai, ai],
     category: "AI",
     description:
