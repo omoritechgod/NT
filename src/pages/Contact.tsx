@@ -1,5 +1,6 @@
+// ===== FILE: src/pages/Contact.tsx =====
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,7 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import axios from "axios";
-import { set } from "date-fns";
 
 const Contact = () => {
   const [message, setMessage] = useState<string>("");
@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    
     try {
       const response = await axios.post(
         "https://api.sheetbest.com/sheets/208d2f4e-b6a4-48e1-9811-1e3471041ad0",
@@ -35,7 +35,7 @@ const Contact = () => {
         setTimeout(() => {
           setStatus(false);
         }, 3000);
-        setMessage(response.data.message || "Your submit was sucessfull ✅");
+        setMessage(response.data.message || "Your message was sent successfully ✅");
       }
     } catch (error) {
       console.log("failed to submit contact form: ", error);
@@ -43,7 +43,7 @@ const Contact = () => {
       setTimeout(() => {
         setStatus(false);
       }, 3000);
-      setMessage(error || "Your submit was not sucessfull");
+      setMessage("Your submission was not successful. Please try again.");
     } finally {
       setFormData({
         name: "",
@@ -53,7 +53,6 @@ const Contact = () => {
         message: "",
       });
     }
-    console.log("Form submitted:", formData);
   };
 
   const handleChange = (
@@ -65,6 +64,23 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  // WhatsApp click handler
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "2347080038774"; // WhatsApp number without + or spaces
+    const defaultMessage = "Hi NT Team! I'd like to discuss a project with you.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  // Chatwoot live chat handler
+  const handleLiveChatClick = () => {
+    if (window.$chatwoot) {
+      window.$chatwoot.toggle('open');
+    } else {
+      console.log('Chatwoot not loaded yet');
+    }
   };
 
   return (
@@ -87,6 +103,31 @@ const Contact = () => {
             discuss your project and discover how we can help you achieve your
             goals.
           </p>
+        </div>
+      </section>
+
+      {/* WhatsApp CTA Banner */}
+      <section className="py-8 bg-gradient-to-r from-green-600 to-green-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-white text-center md:text-left">
+              <h3 className="text-2xl font-bold mb-2 flex items-center justify-center md:justify-start gap-2">
+                <Zap className="h-6 w-6" />
+                Need Instant Replies?
+              </h3>
+              <p className="text-green-50">
+                Chat with us on WhatsApp for quick responses and real-time support
+              </p>
+            </div>
+            <Button
+              onClick={handleWhatsAppClick}
+              size="lg"
+              className="bg-white text-green-600 hover:bg-green-50 font-semibold px-8 flex items-center gap-2"
+            >
+              <MessageCircle className="h-5 w-5" />
+              Chat on WhatsApp
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -204,6 +245,33 @@ const Contact = () => {
               </h2>
 
               <div className="space-y-6 mb-12">
+                {/* WhatsApp Card - Highlighted */}
+                <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200 hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-start">
+                        <MessageCircle className="h-6 w-6 text-green-600 mr-4 mt-1" />
+                        <div>
+                          <h3 className="font-semibold text-[#1b263a] mb-1 flex items-center gap-2">
+                            WhatsApp (Instant Replies)
+                            <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                          </h3>
+                          <p className="text-gray-700 mb-2">+234 708 003 8774</p>
+                          <p className="text-sm text-gray-600 mb-3">Fast responses, available now</p>
+                          <Button
+                            onClick={handleWhatsAppClick}
+                            size="sm"
+                            className="bg-green-600 hover:bg-green-700 text-white"
+                          >
+                            Chat Now
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Email Card */}
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 flex items-start">
                     <Mail className="h-6 w-6 text-[#007aff] mr-4 mt-1" />
@@ -217,6 +285,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
+                {/* Phone Card */}
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 flex items-start">
                     <Phone className="h-6 w-6 text-[#007aff] mr-4 mt-1" />
@@ -224,12 +293,13 @@ const Contact = () => {
                       <h3 className="font-semibold text-[#1b263a] mb-1">
                         Call Us
                       </h3>
-                      <p className="text-gray-600">+2348105182900</p>
-                      <p className="text-gray-600">+2347031337482</p>
+                      <p className="text-gray-600">🇳🇬 Nigeria: +234 810 518 2900</p>
+                      <p className="text-gray-600">🇭🇺 Hungary: +36 20 435 9981</p>
                     </div>
                   </CardContent>
                 </Card>
 
+                {/* Location Card */}
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 flex items-start">
                     <MapPin className="h-6 w-6 text-[#007aff] mr-4 mt-1" />
@@ -247,6 +317,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
+                {/* Response Time Card */}
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 flex items-start">
                     <Clock className="h-6 w-6 text-[#007aff] mr-4 mt-1" />
@@ -255,27 +326,34 @@ const Contact = () => {
                         Response Time
                       </h3>
                       <p className="text-gray-600">
-                        We respond within 48 hours
+                        Email: Within 48 hours
                       </p>
                       <p className="text-gray-600">
-                        Emergency support available
+                        WhatsApp: Instant to 2 hours
                       </p>
                     </div>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* WhatsApp/Live Chat Widget Placeholder */}
+              {/* Live Chat Widget Card */}
               <Card className="bg-gradient-to-br from-[#007aff] to-[#0c267b] text-white">
                 <CardContent className="p-8 text-center">
+                  <MessageCircle className="h-12 w-12 mx-auto mb-4 text-white" />
                   <h3 className="text-2xl font-bold mb-4">
-                    Need Immediate Help?
+                    Live Chat Support
                   </h3>
-                  <p className="text-gray-200 mb-6">
-                    Chat with our team directly for quick answers to your
-                    questions.
+                  <p className="text-gray-200 mb-2">
+                    <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                    We're online now
                   </p>
-                  <Button className="bg-white text-[#007aff] hover:bg-gray-100">
+                  <p className="text-gray-200 mb-6">
+                    Get instant answers from our support team
+                  </p>
+                  <Button 
+                    onClick={handleLiveChatClick}
+                    className="bg-white text-[#007aff] hover:bg-gray-100"
+                  >
                     Start Live Chat
                   </Button>
                 </CardContent>
@@ -284,6 +362,15 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <button
+        onClick={handleWhatsAppClick}
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition-all duration-300 hover:scale-110 animate-bounce"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" />
+      </button>
 
       <Footer />
     </div>
