@@ -10,10 +10,10 @@ import edidiong from "@/assets/Administrators-leadership/expert-edi.png";
 const Leadership = () => {
   const leaders = [
     {
-      name: "TrustGod",
-      role: " Founder & MD",
+      name: "TrustGod Ewuziem",
+      role: " Founder & Managing Director (MD)",
       image: trustGod,
-      bio: "Trust God is the visionary behind NT. As a highly skilled full-stack and all-round developer, he brings unmatched expertise in software engineering, system architecture, and product innovation. With a passion for building scalable, robust solutions, he leads NT with a commitment to excellence, creativity, and impact. Under his leadership, NT is shaping the future of technology with solutions that merge intelligence, design, and innovation.",
+      bio: "Based in Port Harcourt, Nigeria, TrustGod is the visionary behind Nexa Trux. A highly skilled full-stack developer and versatile technology expert, he brings deep expertise in software engineering, system architecture, and product innovation. With a passion for building scalable, robust solutions, he leads Nexa Trux with humility, precision, and purpose. Under his leadership, the company continues to shape the future of technology through solutions that unite intelligence, design, and innovation.",
       // quote: 'Innovation is not just about technology—it\'s about transforming how businesses connect with their customers and create value in an increasingly digital world.',
       // achievements: [
       //   'Led 300% company growth over 5 years',
@@ -23,16 +23,16 @@ const Leadership = () => {
       // ],
       // education: 'MIT - Computer Science, Stanford - MBA',
       social: {
-        linkedin: "https://www.linkedin.com/in/",
+        linkedin: "https://www.linkedin.com/in/trustgod-ewuziem-892b5123b",
         twitter: "#",
         email: "trustewuziem@nexatrux.com",
       },
     },
     {
       name: "Edidiong Umoh",
-      role: "Co-Founder & Company project manager(CPM)/CFO",
+      role: "Co-Founder & Company Project Manager (CPM) / Chief Financial Officer (CFO)",
       image: edidiong,
-      bio: "Edidiong serves as Co-Founder and Company project manager(CPM)/CFO of NT, bringing her expertise in data analysis, data science, and UI/UX design. She plays a central role in transforming data into actionable insights while designing user-focused experiences that align with NT’s mission. Her unique blend of technical and creative skills ensures that NT’s products remain data-driven, user-centric, and impactful.",
+      bio: "Edidiong, a First-Class graduate of Mechanical Engineering from Afe Babalola University, currently resides in Hungary. As Co-Founder and CPM/CFO of Nexa Trux, she bridges strategy, data, and design—bringing together her expertise in data science, analytics, and UI/UX design to drive user-focused innovation. Her technical insight and creative leadership ensure Nexa Trux remains data-driven, human-centered, and impactful in every solution it delivers.",
       // quote: 'The best technology is invisible—it seamlessly enhances human capability without getting in the way.',
       // achievements: [
       //   'Architected systems serving 100M+ users',
@@ -42,16 +42,16 @@ const Leadership = () => {
       // ],
       // education: "Mechanical Enginering - UNIPORT, BSC's",
       social: {
-        linkedin: "https://ng.linkedin.com/in/edidiong-umoh",
+        linkedin: "https://www.linkedin.com/in/edidiong-umoh-0b2341181",
         twitter: "#",
-        email: "nexatrux@gmail.com",
+        email: "info@nexatrux.com",
       },
     },
     {
       name: "Emmanuel Omanoye",
-      role: "Co-Founder & Deputy Managing Director (DMB)/COO",
+      role: "Co-Founder & / Chief Operating Officer (COO)",
       image: emmanuel,
-      bio: "Emmanuel is Co-Founder and Deputy Managing Director (DMB)/COO  of NT and the driving force behind its artificial intelligence, AI model development, and machine learning initiatives. With deep technical knowledge and a passion for innovation, he focuses on building intelligent, scalable systems that power NT’s cutting-edge solutions. His work is instrumental in advancing NT’s vision of harnessing AI to transform industries and create smarter technologies.",
+      bio: " Based in Port Harcourt, Nigeria, Emmanuel serves as Co-Founder and COO of Nexa Trux. He leads the company’s initiatives in artificial intelligence, model development, and DevOps with a strong commitment to innovation and technical excellence. Emmanuel’s ability to translate complex technologies into scalable, intelligent systems continues to power Nexa Trux’s mission of harnessing AI to transform industries and create smarter digital experiences.",
       // quote: 'Great design is not just about how it looks—it\'s about how it works, how it feels, and how it transforms the user\'s relationship with the brand.',
       // achievements: [
       //   'Winner of 15+ international design awards',
@@ -63,7 +63,7 @@ const Leadership = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/",
         twitter: "#",
-        email: "nexatrux@gmail.com",
+        email: "info@nexatrux.com",
       },
     },
     // {
